@@ -1,0 +1,108 @@
+const int motor1pin = 8;
+const int motor2pin = 9;
+const int motor3pin = 7;
+const int motor4pin = 6;
+const int led1 = 11;
+const int led2 = 12;
+const int led3 = 10;
+
+void setup() {
+ // put your setup code here, to run once:
+ pinMode(motor1pin, OUTPUT);
+ pinMode(motor2pin, OUTPUT);
+  pinMode(motor3pin, OUTPUT);
+ pinMode(motor4pin, OUTPUT);
+ pinMode(led1, OUTPUT);
+ pinMode(led2, OUTPUT);
+ pinMode(led3, OUTPUT);
+}
+
+void loop() {
+ // put your main code here, to run repeatedly:
+digitalWrite(motor1pin, LOW);//Motor 1 Forward  
+digitalWrite(motor2pin, HIGH);//Motor 1 Forward 
+digitalWrite(motor3pin, LOW);//Motor 1 Forward  
+digitalWrite(motor4pin, HIGH);//Motor 1 Forward  
+digitalWrite(led1, HIGH);
+digitalWrite(led3, LOW);
+delay(1000);
+digitalWrite(motor1pin, HIGH);//Motor 1 stop 
+digitalWrite(motor2pin, HIGH);//Motor 1 stop 
+digitalWrite(motor3pin, HIGH);//Motor 1 stop  
+digitalWrite(motor4pin, HIGH);//Motor 1 stop
+digitalWrite(led1, LOW);
+digitalWrite(led2, HIGH);
+digitalWrite(led3, LOW);
+delay (1000);
+digitalWrite(motor1pin, HIGH);//Motor 1 backward  
+digitalWrite(motor2pin, LOW);//Motor 1 backward
+digitalWrite(motor3pin, HIGH);//Motor 1 backward  
+digitalWrite(motor4pin, LOW);//Motor 1 backward  
+digitalWrite(led1, HIGH);
+digitalWrite(led2, LOW);
+digitalWrite(led3, HIGH);
+delay(1000);
+digitalWrite(motor1pin, HIGH);//Motor 1 stop  
+digitalWrite(motor2pin, HIGH);//Motor 1 stop
+digitalWrite(motor3pin, HIGH);//Motor 1 stop  
+digitalWrite(motor4pin, HIGH);//Motor 1 stop 
+digitalWrite(led1, LOW);
+digitalWrite(led2, HIGH);
+digitalWrite(led3, LOW);
+delay(1000);
+digitalWrite(motor1pin, LOW);//Motor 1 left  
+digitalWrite(motor2pin, HIGH);//Motor 1 left
+digitalWrite(motor3pin, HIGH);//Motor 1 left  
+digitalWrite(motor4pin, LOW);//Motor 1 left
+digitalWrite(led1, HIGH);
+digitalWrite(led2, LOW);
+digitalWrite(led3, HIGH);
+delay(1000);
+digitalWrite(motor1pin, HIGH);//Motor 1 stop  
+digitalWrite(motor2pin, HIGH);//Motor 1 stop
+digitalWrite(motor3pin, HIGH);//Motor 1 stop  
+digitalWrite(motor4pin, HIGH);//Motor 1 stop
+digitalWrite(led1, LOW);
+digitalWrite(led2, HIGH);
+digitalWrite(led3, LOW);
+delay(1000);
+ digitalWrite(motor1pin, LOW);//Motor 1 Forward  
+digitalWrite(motor2pin, HIGH);//Motor 1 Forward 
+digitalWrite(motor3pin, LOW);//Motor 1 Forward  
+digitalWrite(motor4pin, HIGH);//Motor 1 Forward  
+digitalWrite(led1, HIGH);
+digitalWrite(led2, LOW);
+digitalWrite(led3, HIGH);
+delay(1000);
+digitalWrite(motor1pin, HIGH);//Motor 1 stop  
+digitalWrite(motor2pin, HIGH);//Motor 1 stop
+digitalWrite(motor3pin, HIGH);//Motor 1 stop  
+digitalWrite(motor4pin, HIGH);//Motor 1 stop
+digitalWrite(led1, LOW);
+digitalWrite(led2, HIGH);
+digitalWrite(led3, LOW);
+delay(1000);
+digitalWrite(motor1pin, HIGH);//Motor 1 right  
+digitalWrite(motor2pin, LOW);//Motor 1 right
+digitalWrite(motor3pin, LOW);//Motor 1 right                                                          
+digitalWrite(led1, HIGH);
+digitalWrite(led2, LOW);
+digitalWrite(led3, HIGH);
+delay(1000);
+digitalWrite(motor1pin, LOW);//Motor 1 Forward  
+digitalWrite(motor2pin, HIGH);//Motor 1 Forward 
+digitalWrite(motor3pin, LOW);//Motor 1 Forward  
+digitalWrite(motor4pin, HIGH);//Motor 1 Forward  
+digitalWrite(led1, LOW);
+digitalWrite(led2, HIGH);
+digitalWrite(led3, LOW);
+delay(1000);
+digitalWrite(motor1pin, HIGH);//Motor 1 stop  
+digitalWrite(motor2pin, HIGH);//Motor 1 stop
+digitalWrite(motor3pin, HIGH);//Motor 1 stop  
+digitalWrite(motor4pin, HIGH);//Motor 1 stop
+digitalWrite(led1, HIGH);
+digitalWrite(led2, LOW);
+digitalWrite(led3, HIGH);
+delay(1000);
+}
